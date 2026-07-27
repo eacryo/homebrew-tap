@@ -1,0 +1,17 @@
+cask "oh-my-tab" do
+  depends_on macos: ">= 13"
+  depends_on arch: :arm64
+  version "0.1.0"
+  sha256 "51de9826b216600b04b2eae5c7e9a69aac6300ebc4f6ffd647228a6c5d95159f"
+  url "https://github.com/eacryo/oh-my-tab/releases/download/v#{version}/Oh-My-Tab.dmg"
+  name "Oh-My-Tab"
+  desc "macOS window switcher (Cmd+Tab alternative)"
+  homepage "https://github.com/eacryo/oh-my-tab"
+  app "Oh-My-Tab.app"
+
+  zap trash: [
+    "~/Library/Caches/oh-my-tab-icons",
+    "~/Library/Logs/oh-my-tab",
+    "~/.config/oh-my-tab",
+  ]
+end

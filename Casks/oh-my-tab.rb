@@ -1,8 +1,8 @@
 cask "oh-my-tab" do
   depends_on macos: :ventura
   depends_on arch: :arm64
-  version "0.1.0"
-  sha256 "51de9826b216600b04b2eae5c7e9a69aac6300ebc4f6ffd647228a6c5d95159f"
+  version "0.1.1"
+  sha256 "sha256:14c1ec3b580c989b006d19055c151c35f4645bebe0e26c3b34340660edf42171"
   url "https://github.com/eacryo/oh-my-tab/releases/download/v#{version}/Oh-My-Tab.dmg"
   name "Oh-My-Tab"
   desc "macOS window switcher (Cmd+Tab alternative)"
